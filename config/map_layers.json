@@ -1,0 +1,98 @@
+{
+  "layers": [
+    {
+      "id": "municipalities",
+      "name": {
+        "en": "Municipalities",
+        "mi": "Taone"
+      },
+      "type": "geojson",
+      "source": "data/geojson/municipalities.geojson",
+      "style": {
+        "fill_color": "#4A90E2",
+        "stroke_color": "#2C5F8D",
+        "stroke_width": 2
+      }
+    },
+    {
+      "id": "buildings",
+      "name": {
+        "en": "Buildings",
+        "mi": "Whare"
+      },
+      "type": "geojson",
+      "source": "data/geojson/buildings.geojson",
+      "style": {
+        "fill_color": "#8B7355",
+        "stroke_color": "#5C4A37",
+        "stroke_width": 1
+      }
+    },
+    {
+      "id": "roads",
+      "name": {
+        "en": "Roads",
+        "mi": "Ara"
+      },
+      "type": "geojson",
+      "source": "data/geojson/roads.geojson",
+      "style": {
+        "stroke_color": "#E8E8E8",
+        "stroke_width": 2
+      }
+    },
+    {
+      "id": "water",
+      "name": {
+        "en": "Water Bodies",
+        "mi": "Wai"
+      },
+      "type": "geojson",
+      "source": "data/geojson/water.geojson",
+      "style": {
+        "fill_color": "#4A9FE8",
+        "stroke_color": "#2C6FA8",
+        "stroke_width": 1
+      }
+    },
+    {
+      "id": "elevation",
+      "name": {
+        "en": "Elevation",
+        "mi": "Teitei"
+      },
+      "type": "lidar_terrain",
+      "source": "data/processed/terrain.tif",
+      "style": {
+        "color_ramp": "terrain",
+        "opacity": 0.7
+      }
+    }
+  ],
+  "themes": [
+    {
+      "id": "infrastructure",
+      "name": {
+        "en": "Infrastructure",
+        "mi": "Hangarau"
+      },
+      "layers": ["roads", "buildings"]
+    },
+    {
+      "id": "topography",
+      "name": {
+        "en": "Topography",
+        "mi": "Taiao"
+      },
+      "layers": ["elevation", "water"]
+    },
+    {
+      "id": "administrative",
+      "name": {
+        "en": "Administrative",
+        "mi": "Whakahaere"
+      },
+      "layers": ["municipalities"]
+    }
+  ]
+}
