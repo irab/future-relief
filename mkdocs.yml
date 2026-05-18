@@ -1,0 +1,85 @@
+site_name: Future Relief - 3D Terrain Mapping
+site_description: Documentation for converting LiDAR DEM data to 3D printable terrain models
+site_author: Future Relief Project
+# Update these with your actual repository URL
+# repo_url: https://github.com/yourusername/future-relief
+# repo_name: future-relief
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: docs/index.md
+  - Getting Started:
+    - Installation: INSTALL.md
+    - Quick Start: docs/QUICK_START.md
+  - Guides:
+    - Complete Pipeline: docs/COMPLETE_PIPELINE.md
+    - Merging Tiles: docs/MERGING_TILES.md
+    - Detecting Flat Sea: docs/DETECTING_FLAT_SEA.md
+    - Creating Tiles: docs/CREATING_TILES.md
+    - Square Tiles: docs/SQUARE_TILES.md
+    - Checking Tiles: docs/CHECKING_TILES.md
+    - Validating Tiles: docs/VALIDATING_TILES.md
+    - Converting to STL: docs/FIRST_STL_GUIDE.md
+    - STL Viewers: docs/STL_VIEWERS.md
+    - Next Steps After Tiles: docs/NEXT_STEPS_AFTER_TILES.md
+    - Test Tiles: docs/TEST_TILES_GUIDE.md
+    - Checking Dimensions: docs/CHECK_DIMENSIONS.md
+    - Automating Tiles: docs/AUTOMATING_TILES.md
+  - 3D Printing:
+    - Prusa XL Settings: docs/PRUSA_XL_SETTINGS.md
+    - Adding a Base: docs/ADDING_BASE.md
+    - Print Structure: docs/3D_PRINTING_STRUCTURE.md
+    - Why Vertical Exaggeration: docs/WHY_VERTICAL_EXAGGERATION.md
+  - Troubleshooting:
+    - Common Issues: docs/TROUBLESHOOTING.md
+    - Adjusting DEM Display: docs/ADJUSTING_DEM_DISPLAY.md
+  - Reference:
+    - QGIS Installation: docs/INSTALL_QGIS.md
+    - Data Sources: docs/DATA_SOURCES.md
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+copyright: Copyright &copy; 2024 Future Relief Project

@@ -25,6 +25,20 @@ data/processed/*.ply
 data/processed/*.obj
 data/processed/*.stl
 
+# GeoTIFF files and related
+*.tif
+*.tiff
+*.TIF
+*.TIFF
+*.aux
+*.aux.xml
+*.tfw
+*.gfs
+lds-new-zealand-lidar-1m-dem-GTiff/*
+lds-new-zealand-lidar-1m-dem-GTiff.zip
+data/processed/*.tif
+data/processed/*.tiff
+
 # IDE
 .vscode/
 .idea/
@@ -44,3 +58,10 @@ Thumbs.db
 visualization/dist/
 visualization/build/
 *.log
+
+# MkDocs
+site/
+.cache/
+
+# Data
+data/processed/

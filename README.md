@@ -112,6 +112,22 @@ python processing/lidar_processor.py --input data/lidar/ --output data/processed
 - [The Gaia System Paper](https://www.mdpi.com/2813-2084/4/4/49)
 - [Gaia System Video](https://www.youtube.com/watch?v=11_Q1gfUPxw)
 
+## Documentation
+
+📚 **Full documentation is available at:** [GitHub Pages](https://yourusername.github.io/future-relief/)
+
+The documentation includes:
+- Installation guides
+- Step-by-step tutorials
+- 3D printing optimization
+- Troubleshooting guides
+
+To build documentation locally:
+```bash
+pip install -r docs/requirements.txt
+mkdocs serve
+```
+
 ## License
 
 [Add your license here]
